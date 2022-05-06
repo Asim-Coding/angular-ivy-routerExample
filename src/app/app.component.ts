@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'my-app',
@@ -7,4 +8,8 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+  constructor(private router:Router){}
+  student(){
+    this.router.navigate(['/student'])
+  }
 }

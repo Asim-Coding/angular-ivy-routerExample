@@ -3,8 +3,9 @@
   Start editing to see some magic happen :)
 </p>
 <h3>router link example</h3>
-<a [routerLink]="['/student']">Student</a>
-<a [routerLink]="['/studentdetails']">Student Details</a>
+<a [routerLink]="['/student']">Student</a>------------
+<a [routerLink]="['/studentdetails']">Student Details</a><br />
+<button (click)="student()">show student</button>
 <div>
 <router-outlet></router-outlet>
 </div>
