@@ -4,7 +4,7 @@ import { StudentComponent } from './student/student.component';
 import { StudentdetailsComponent } from './studentdetails/studentdetails.component';
 
 const routes: Routes =[
-  {path:'student', component:StudentComponent}
+  {path:'student', component:StudentComponent},
   {path:'studentdetails',component:StudentdetailsComponent}
 ];
 
@@ -12,3 +12,4 @@ const routes: Routes =[
   imports :[RouterModule.forRoot(routes)],
   exports:[RouterModule]
 })
+export class AppRoutingModule { }
